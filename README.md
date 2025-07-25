@@ -21,6 +21,10 @@ Este script executa automaticamente uma série de consultas `snmpwalk` com OIDs 
 
 ---
 
+## ✅ Testando com uma lista de communities:
+
+`cat lista_de_communites.txt | xargs -I{} bash -c './snmp_enum.sh 192.168.0.1 {} 2c '`
+
 ## 💻 Requisitos
 
 Este script depende de ferramentas comuns em sistemas Linux:
@@ -64,6 +68,10 @@ Se você escanear 192.168.1.1, a saída será:
 Você pode visualizar o arquivo com:
 `cat snmp_enum_192.168.1.1.txt`
 
+
+
 🙌 Contribuições
 Contribuições são bem-vindas! Sinta-se livre para abrir issues ou pull requests com melhorias, novos OIDs ou sugestões.
+
+
 
